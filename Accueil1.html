@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ensemble, agissons contre les changements climatiques !</title>
+    <link rel="stylesheet" href="styleac.css">
+    <link rel="stylesheet" href="connexion.css">
+    <script>
+        function switchLanguage() {
+            var langSelect = document.getElementById('lang-select');
+            var selectedLang = langSelect.value;
+
+            // Ajoutez le code pour changer le contenu de la page en fonction de la langue sélectionnée (selectedLang)
+            // ...
+
+            // Exemple d'affichage de la langue sélectionnée dans la console pour le test
+            console.log("Langue sélectionnée : " + selectedLang);
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenue !</h1>
+    </header>
+
+    <nav>
+        <ul>
+           
+            <li><a href="decouverte.html">Découverte</a></li>
+            <li><a href="participation.html">Participation</a></li>
+            <li><a href="ressources.html">Ressources</a></li>
+            <li>
+                <select id="lang-select" onchange="switchLanguage()">
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                    <!-- Ajoutez d'autres options pour les langues nationales -->
+                </select>
+            </li>
+            <li><a href="apropos.html">À Propos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+    <ul>
+    <li>🌍 Adoptez des modes de transport durables pour réduire notre empreinte carbone.</li>
+    <li>💡 Utilisez des ampoules LED et éteignez les appareils électroniques inutilisés pour économiser l'énergie.</li>
+    <li>🌱 Soutenez l'agriculture durable en consommant des produits locaux et biologiques.</li>
+    <li>♻️ Pratiquez la réduction, la réutilisation et le recyclage des déchets pour limiter la pollution.</li>
+    <li>🌿 Plantez des arbres et préservez nos espaces naturels pour favoriser la biodiversité.</li>
+    <li>🚴‍♀️ Encouragez le vélo comme moyen de transport écologique et sain.</li>
+    <li>🌞 Adoptez l'énergie solaire pour une source d'énergie propre et renouvelable.</li>
+    <li>🌎 Participez à des initiatives de nettoyage de l'environnement dans votre communauté.</li>
+    <li>📚 Éduquez-vous sur les enjeux environnementaux et partagez vos connaissances avec les autres.</li>
+</ul>
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Application. Tous droits réservés lifkana.</p>
+    </footer>
+
+</body>
+</html>
