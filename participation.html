@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleParticipation.css"/>
+  <title>Participation aux actions pour un avenir durable</title>
+   <link rel="stylesheet" href="styleac.css">
+   <link rel="stylesheet" href="connexion.css">
+</head>
+<body>
+  <header>
+    <h1>Participation aux actions pour un avenir durable</h1>
+    <nav>
+      <ul>
+        <li><a href="Accueil1.html">Accueil</a></li>
+        <li><a href="decouverte.html">Découverte</a></li>
+        <li><a href="ressources.html">Ressources</a></li>
+        <li><a href="apropos.html">À Propos</a></li>
+      </ul>
+    </nav>
+  </header>
+<main>
+  <section>
+    <h2>Participer !</h2>
+    <p>
+      Bienvenue dans l'espace dédié à l'action pour un avenir durable. Ici, nous vous invitons à vous immerger dans des initiatives stimulantes qui font une réelle différence dans la lutte contre les enjeux environnementaux. Explorez les différentes facettes de la participation, choisissez votre voie pour contribuer et rejoignez la communauté engagée pour créer un impact positif sur notre planète.
+    </p>
+    <p>
+      Les <strong>Projets Locaux</strong> offrent une opportunité unique de vous impliquer au niveau communautaire. Découvrez des initiatives locales, rejoignez des équipes passionnées et contribuez directement à des actions concrètes dans votre région. Ensemble, construisons un avenir plus durable et renforçons les liens au sein de notre communauté.
+    </p>
+    <p>
+      Le <strong>Calendrier d'Événements</strong> est votre source d'inspiration continue. Restez informé sur les événements à venir, des conférences et ateliers aux actions de sensibilisation. Participez à des moments enrichissants qui élargiront vos connaissances, stimuleront votre engagement et vous connecteront avec d'autres passionnés par la cause environnementale.
+    </p>
+    <p>
+      Dans l'espace <strong>Partage Social</strong>, votre voix compte. Exprimez vos expériences, partagez vos actions et découvertes sur les réseaux sociaux. Ensemble, nous pouvons inspirer davantage de personnes à adopter des habitudes durables et à s'engager dans la préservation de notre planète.
+    </p>
+    
+  </section>
+</main>
+
+  <main>
+    
+  </main>
+
+  <footer>
+    
+  </footer>
+  <script src="script.js"></script>
+  <!-- ... Votre code HTML précédent ... -->
+
+    <!-- ... Votre code HTML précédent ... -->
+
+<main>
+  <section>
+    <h2>Participer !</h2>
+    <select id="categorie" onchange="rediriger()">
+      <option value="projets">Projets Locaux</option>
+      <option value="calendrier">Calendrier d'Événements</option>
+      <option value="partage">Partage Social</option>
+    </select>
+  </section>
+</main>
+
+<footer>
+  <p>Tous droits réservés &copy; 2023 lifkana</p>
+</footer>
+
+<script>
+  function rediriger() {
+    var select = document.getElementById("categorie");
+    var selectedOption = select.options[select.selectedIndex].value;
+
+    // Redirige vers la page correspondante
+    if (selectedOption === "projets") {
+      window.location.href = "projets_locaux.html";
+    } else if (selectedOption === "calendrier") {
+      window.location.href = "calendrier_evenements.html";
+    } else if (selectedOption === "partage") {
+      window.location.href = "partage.html";
+    }
+  }
+</script>
+</body>
+</html>
+    
+  
+

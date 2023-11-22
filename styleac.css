@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* Réinitialiser les styles par défaut des navigateurs */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    background-color: #4CAF50; /* Couleur verte */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Barre de navigation */
+nav {
+    background-color: #333; /* Couleur de fond de la barre de navigation */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Contenu principal */
+main {
+    padding: 20px;
+}
+
+main ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+main li {
+    margin-bottom: 10px;
+}
+
+/* Pied de page */
+footer {
+    background-color: #4CAF50; /* Couleur verte */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Styles pour les icônes emoji */
+li::before {
+    content: '\1F449'; /* Code unicode pour une main pointant vers la droite */
+    margin-right: 10px;
+}

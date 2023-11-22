@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Découvre de nouvelles perspectives sur les changements climatiques !</title>
+  <link rel="stylesheet" href="styleac.css"/>
+  <link rel="stylesheet" href="decouverte.css" />
+   <link rel="stylesheet" href="apropos.css">
+</head>
+<body>
+  <header>
+    <h1>Découvre de nouvelles perspectives sur les changements climatiques !</h1>
+    <nav>
+      <ul>
+        <li><a href="Accueil1.html">Accueil</a></li>
+        <li><a href="participation.html">Participation</a></li>
+        <li><a href="ressources.html">Ressources</a></li>
+        <li><a href="apropos.html">À Propos</a></li>
+         <!-- Liste déroulante -->
+    <label for="resourcesDropdown">Decouvrir:</label>
+    <select id="resourcesDropdown" onchange="changeResource()">
+      <option value="decouverte">Découverte</option>
+      <option value="infographies">Infographies</option>
+      <option value="historiques">Historiques locales</option>
+    </select>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <p><main>
+    <p>Explorez cette page pour découvrir un ensemble riche d'articles, de vidéos captivantes et de témoignages inspirants, illustrant les actions concrètes entreprises pour lutter contre les changements climatiques.</p>
+    <p>Plongez dans les récits passionnants d'individus engagés, de communautés déterminées et d'organisations innovantes à travers le monde. Apprenez comment chacun contribue à créer un avenir plus durable.</p>
+    <p>Joignez-vous à nous dans cette aventure palpitante et explorez les multiples façons dont vous pouvez apporter une contribution positive significative à notre planète. Que vous soyez intéressé par la réduction de votre empreinte carbone personnelle, la participation à des initiatives locales ou la sensibilisation, vous trouverez des pistes d'action adaptées à vos aspirations.</p>
+</main>
+    
+    </p>
+
+   
+  </main>
+
+  <footer>
+    <p>Tous droits réservés &copy; 2023 lifkana</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <script>
+    // Fonction pour changer le lien en fonction de la sélection de la liste déroulante
+    function changeResource() {
+      var dropdown = document.getElementById('resourcesDropdown');
+      var selectedResource = dropdown.value;
+
+      // Redirige vers le lien correspondant en fonction de la sélection
+      switch (selectedResource) {
+        case 'decouverte':
+          window.location.href = 'carte.jpg';
+          break;
+        case 'infographies':
+          window.location.href = 'infographies.html';
+          break;
+        case 'historiques':
+          window.location.href = 'Historiques localews.html';
+          break;
+        default:
+          break;
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styles.css"/>
+  <title>Ressources pour un avenir durable</title>
+   <link rel="stylesheet" href="apropos.css">
+    <link rel="stylesheet" href="styleac.css">
+  <link rel="stylesheet" href="decouverte.css" />
+</head>
+<body>
+  <header>
+    <h1>Ressources pour un avenir durable</h1>
+    <nav>
+      <ul>
+        <li><a href="Accueil1.html">Accueil</a></li>
+        <li><a href="decouverte.html">Découverte</a></li>
+        <li><a href="participation.html">Participation</a></li>
+        <li><a href="apropos.html">À Propos</a></li>
+        <!-- Liste déroulante -->
+    <label for="resourceType">type de ressource :</label>
+    <select id="resourceType" onchange="changeResourceType()">
+      <option value="article">Article</option>
+      <option value="videos">Vidéos</option>
+      <option value="guide">Guide pratique</option>
+    </select>
+
+    <!-- Contenu spécifique à chaque type de ressource -->
+    <div id="resourceContent">
+      <!-- Le contenu de chaque ressource sera chargé ici dynamiquement -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <main>
+    <p>Découvre une sélection soigneusement choisie de ressources pour enrichir ta compréhension des enjeux environnementaux et des solutions durables. Plonge dans un monde d'articles perspicaces, de vidéos inspirantes, de livres captivants, et bien plus encore, pour approfondir tes connaissances et te motiver à contribuer à un monde meilleur.</p>
+    <p>Que ton intérêt soit axé sur le changement climatique, la préservation de la biodiversité, l'adoption d'énergies renouvelables ou d'autres sujets liés au développement durable, ces ressources sont conçues pour t'aider à explorer en profondeur. Elles offrent des informations précieuses et des moyens concrets d'agir dans des domaines qui te passionnent particulièrement.</p>
+    <p>Explore, apprends et trouve des moyens pratiques de mettre tes connaissances en action. Que tu souhaites jouer un rôle actif dans la réduction de ton impact environnemental personnel ou t'impliquer dans des initiatives communautaires, ces ressources te guideront vers des solutions concrètes.</p>
+</main>
+    
+
+    
+    </div>
+  </main>
+
+  <footer>
+  <footer>
+    <p>N'hésite pas à partager ces ressources avec tes amis et ta famille afin d'amplifier la sensibilisation autour de ces enjeux cruciaux. Ensemble, nous pouvons inspirer le changement et œuvrer vers un avenir durable.</p>
+    <button id="shareButton" onclick="shareContent()">Partager</button>
+</footer>
+
+<footer>
+    <p>N'hésite pas à partager ces ressources avec tes amis et ta famille afin d'amplifier la sensibilisation autour de ces enjeux cruciaux. Ensemble, nous pouvons inspirer le changement et œuvrer vers un avenir durable.</p>
+    <button onclick="shareOnTwitter()">Partager sur Twitter</button>
+    <button onclick="shareOnFacebook()">Partager sur Facebook</button>
+</footer>
+
+<script>
+    function shareOnTwitter() {
+        window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href) + '&text=' + encodeURIComponent('Découvrez ces ressources sur les enjeux environnementaux et les solutions durables.'));
+    }
+
+    function shareOnFacebook() {
+        window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href));
+    }
+</script>
+
+  
+  </footer>
+
+  <script src="script.js"></script>
+
+  <script>
+    // Fonction pour changer le contenu en fonction du type de ressource sélectionné
+    function changeResourceType() {
+      var resourceType = document.getElementById('resourceType').value;
+
+      // Redirige vers la page spécifique en fonction du type de ressource sélectionné
+      switch (resourceType) {
+        case 'article':
+          window.location.href = 'Article.html';
+          break;
+        case 'videos':
+          window.location.href = 'Videos.html';
+          break;
+        case 'guide':
+          window.location.href = 'Guide pratique.html';
+          break;
+        default:
+          break;
+      }
+    }
+  </script>
+</body>
+</html>
